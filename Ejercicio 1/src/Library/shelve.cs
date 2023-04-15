@@ -7,16 +7,19 @@ public class Shelve
         {
             this.Libros.Add(Libro);
         }
-        public string NombreShelve { get ; set; }
         
+    
+
         public ArrayList Libros = new ArrayList();
 
-        public void AddLibros(Book libro){
+        public void AddLibros(Book libro)
+        {
             this.Libros.Add(libro);
 
             Console.WriteLine("Se agrego un libro");
         }
-        public void EliminateLibro(Book Libro){
+        public void EliminateLibro(Book Libro)
+        {
             this.Libros.Remove(Libro);
             
             Console.WriteLine("Se elimino un libro");
